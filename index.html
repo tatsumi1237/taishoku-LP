@@ -3,6 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17965307662"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17965307662');
+</script>
+
+<!-- Event snippet for 連絡先 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17965307662/GQ6oCKrwtYAcEI6uw_ZC',
+      'value': 1.0,
+      'currency': 'JPY',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+
   <title>退職給付金サポート</title>
   <style>
     body {
@@ -25,9 +56,36 @@
 
   <img src="images/01.jpg">
   <img src="images/02.jpg">
-  <img src="images/03.jpg">
+
+<a href="https://lin.ee/WKzGzve"
+ onclick="return gtag_report_conversion('https://lin.ee/WKzGzve');">
+   <img src="images/03.jpg">
+</a>
+
   <img src="images/04.jpg">
   <img src="images/05.jpg">
+
+<a href="https://lin.ee/WKzGzve"
+ onclick="return gtag_report_conversion('https://lin.ee/WKzGzve');">
+   <img src="images/06.jpg">
+</a>
+
+  <img src="images/07.jpg">
+  <img src="images/08.jpg">
+
+<a href="https://lin.ee/WKzGzve"
+ onclick="return gtag_report_conversion('https://lin.ee/WKzGzve');">
+   <img src="images/09.jpg">
+</a>
+
+  <img src="images/10.jpg">
+
+<a href="https://lin.ee/WKzGzve"
+ onclick="return gtag_report_conversion('https://lin.ee/WKzGzve');">
+   <img src="images/11.jpg">
+
+</a>  <img src="images/12.jpg">
+
 
    <!-- フッターリンク -->
   <div class="footer">
